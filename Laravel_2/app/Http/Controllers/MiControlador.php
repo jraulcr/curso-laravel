@@ -36,7 +36,10 @@ class MiControlador extends Controller
 
     public function galeria()
     {
-        return view("galeria");
+
+        $alumnos=["Juan", "Bego", "María", "Raúl"];
+
+        return view("galeria", compact("alumnos"));
     }
 
     /**

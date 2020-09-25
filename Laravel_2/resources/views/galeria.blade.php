@@ -6,46 +6,24 @@
 
 @endsection
 
+
 @section('infoGeneral')
 
 <p>Aquí iria el contenido principal de la página</p>
 
+@if (count($alumnos))
 
-<table width="50%" border="1">
-    <thead>
-      <tr>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
+    <table colspan="50%" border="1">
+
+        @foreach ($alumnos as $persona)
+            <tr>
+                <td>{{ $persona }}</td>
+            </tr>
+        @endforeach
+
     </table>
 
+@endif
 
 @endsection
 
