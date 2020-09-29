@@ -36,9 +36,10 @@ class MiControlador extends Controller
 
     public function galeria()
     {
-
+        //$alumnos =[];
         $alumnos=["Juan", "Bego", "María", "Raúl"];
 
+        //un 'compact' permite pasar numero de parametros variable
         return view("galeria", compact("alumnos"));
     }
 
