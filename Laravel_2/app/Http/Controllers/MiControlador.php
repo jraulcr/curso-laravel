@@ -1,7 +1,7 @@
 <?php
 /*
 $ php artisan make:controller --resouce MiControlador
-
+mabera-pc@mabera-pc:~/curso-laravel/Laravel_2$ php artisan serve
  */
 namespace App\Http\Controllers;
 
